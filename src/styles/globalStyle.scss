@@ -1,0 +1,12 @@
+@import './config/_variables.scss';
+
+body {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+  @media #{$desktop} {
+    width: 1200px;
+    margin: 80px auto 0 auto;
+    border: green 2px solid;
+  }
+}
