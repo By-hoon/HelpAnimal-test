@@ -2,8 +2,10 @@
 
 .header__navigation {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1;
   padding: 30px 30px 20px 30px;
   font-family: 'Gugi', cursive;
@@ -17,4 +19,44 @@
   &.isDark {
     color: black;
   }
+}
+
+.header__navigation--menu {
+  width: 130px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navigation--menuLink {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  vertical-align: middle;
+  line-height: 1.5;
+  color: white;
+  &.isDark {
+    color: black;
+  }
+}
+
+.header__navigation--menuLink:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 4px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: #95ffff;
+  &.isDark {
+    background-color: #0079fa;
+  }
+}
+.header__navigation--menuLink:hover:after {
+  width: 100%;
+  opacity: 1;
 }
