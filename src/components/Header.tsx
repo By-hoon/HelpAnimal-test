@@ -18,6 +18,14 @@ const Header = () => {
       <Link to="/" className={classNames('header__navigation--logo', { isDark: isDark })}>
         헬프애니멍
       </Link>
+      <div className={classNames('header__navigation--menu')}>
+        <Link to="/test" className={classNames('header__navigation--menuLink', { isDark: isDark })}>
+          test
+        </Link>
+        <Link to="/test" className={classNames('header__navigation--menuLink', { isDark: isDark })}>
+          sub
+        </Link>
+      </div>
     </div>
   );
 };
