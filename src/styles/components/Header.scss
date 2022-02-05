@@ -1,4 +1,4 @@
-@import '../config/font.scss';
+@import "../config/font.scss";
 
 .header__navigation {
   position: fixed;
@@ -8,7 +8,7 @@
   width: 100%;
   z-index: 1;
   padding: 30px 30px 20px 30px;
-  font-family: 'Gugi', cursive;
+  font-family: "Gugi", cursive;
 }
 
 .header__navigation--logo {
@@ -41,7 +41,7 @@
 }
 
 .header__navigation--menuLink:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -52,11 +52,12 @@
   transition-duration: 0.3s;
   opacity: 0;
   background-color: #95ffff;
-  &.isDark {
-    background-color: #0079fa;
-  }
 }
 .header__navigation--menuLink:hover:after {
   width: 100%;
   opacity: 1;
+}
+
+.header__navigation--menuLink.isDark:after {
+  background-color: #0079fa;
 }
