@@ -8,7 +8,9 @@ const Header = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    if (location.pathname !== "/") {
+    if (location.pathname === "/") {
+      setIsDark(false);
+    } else {
       setIsDark(true);
     }
   }, [location.pathname]);
@@ -26,14 +28,16 @@ const Header = () => {
           to="/test"
           className={classNames("header__navigation--menuLink", {
             isDark: isDark,
+            isNow: location.pathname === "/test",
           })}
         >
           test
         </Link>
         <Link
-          to="/test"
+          to="/tes"
           className={classNames("header__navigation--menuLink", {
             isDark: isDark,
+            isNow: location.pathname === "/tes",
           })}
         >
           sub

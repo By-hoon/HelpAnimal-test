@@ -71,3 +71,8 @@
 .header__navigation--menuLink.isDark:after {
   background-color: $header-btn-hover-darken;
 }
+
+.header__navigation--menuLink.isNow:after {
+  width: 100%;
+  opacity: 1;
+}
