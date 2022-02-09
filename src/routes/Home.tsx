@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/routes/home.scss";
 
 function Home() {
@@ -13,7 +14,21 @@ function Home() {
               />
             </video>
           </div>
+          <div>
+            <span className="span1">유기견들을 도와주세요</span>
+            <p className="span2">설명 부분</p>
+            <Link to="/login" className="span3">
+              시작
+            </Link>
+          </div>
         </div>
+        <section className="section1"></section>
+        <section className="section2">
+          <span>section2</span>
+        </section>
+        <section className="section3">
+          <span>section3</span>
+        </section>
       </main>
     </>
   );
