@@ -1,8 +1,6 @@
-@import './config/_variables.scss';
+@import "./config/_variables.scss";
 
 body {
-  width: 100%;
-  height: auto;
   margin-top: 80px;
   @media #{$desktop} {
     width: 1200px;
