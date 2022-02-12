@@ -1,5 +1,14 @@
 <h1 align="center">HelpAnimal-test</h1>
 
+> ## 사용 스택
+
+- React
+- Typescript
+- Sass
+- Redux
+
+<br>
+
 > ## 디렉토리 구조
 
 ```bash
