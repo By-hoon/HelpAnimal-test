@@ -3,6 +3,7 @@ import Home from "./routes/Home";
 import Header from "./components/Header";
 import Test from "./routes/Test";
 import Login from "./routes/Login";
+import Crew from "./routes/Crew";
 
 const Router = () => {
   return (
@@ -12,6 +13,7 @@ const Router = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/test" element={<Test />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/crew" element={<Crew />}></Route>
       </Routes>
     </BrowserRouter>
   );
