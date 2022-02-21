@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/components/CrewCard.scss";
 
 interface CrewParams {
@@ -12,20 +13,31 @@ interface CrewParams {
 const CrewCard = (crewObject: CrewParams) => {
   return (
     <div className="card__container">
-      <div className="logo__container">
-        <img src={crewObject.image} alt="crew-logo" className="logo__image" />
-      </div>
-      <div className="text__container">
-        <div className="text__container--forward">
-          <span className="name__span">{crewObject.name}</span>
-          <span className="amount__span">{crewObject.amount}</span>
-          <span className="region__span">{crewObject.region}</span>
+      <Link to={`/crew/${crewObject.id}`} className="link">
+        <div className="card__container--forward">
+          <div className="logo__container">
+            <img
+              src={crewObject.image}
+              alt="crew-logo"
+              className="logo__image"
+            />
+          </div>
+          <div className="text__container--forward">
+            <div className="span--top">
+              <span className="name__span">{crewObject.name}</span>
+            </div>
+            <div className="span--bottom">
+              <span className="region__span">{crewObject.region}</span>
+              <span className="amount__span">{crewObject.amount}</span>
+            </div>
+          </div>
         </div>
-        <div className="text__container--backward">
-          <span>{crewObject.introduction}</span>
-          <button>자세히</button>
+        <div className="card__container--backward">
+          <div className="text__container--backward">
+            <p>{crewObject.introduction}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
