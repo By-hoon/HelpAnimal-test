@@ -3,7 +3,7 @@ import Home from "./routes/Home";
 import Header from "./components/Header";
 import Test from "./routes/Test";
 import Login from "./routes/Login";
-import Crew from "./routes/Crew";
+import Crew from "./routes/crew/Crew";
 
 const Router = () => {
   return (

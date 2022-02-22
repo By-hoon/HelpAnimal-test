@@ -1,6 +1,6 @@
-import CrewCard from "../components/CrewCard";
-import "../styles/routes/crew.scss";
-import { CREWS } from "../test/data/crew";
+import CrewCard from "../../components/CrewCard";
+import "../../styles/routes/crew.scss";
+import { CREWS } from "../../test/data/crew";
 
 const Crew = () => {
   const crews = CREWS.WHOLE;
