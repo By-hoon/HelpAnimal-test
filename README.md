@@ -16,19 +16,25 @@ _임시 데이터 set으로 구현_
 ```bash
 src
 ├── components
-│   └── Header.tsx
+│   ├── CrewCard.tsx
+│   ├── Header.tsx
+│   └── MyCrewCard.tsx
 ├── routes
+│   ├── crew
+│   │   └── Crew.tsx
 │   ├── Home.tsx
 │   ├── Login.tsx
 │   └── Test.tsx
 ├── styles
 │   ├── components
+│   │   ├── CrewCard.scss
 │   │   └── Header.scss
 │   ├── config
 │   │   ├── _colors.scss
 │   │   ├── _font.scss
 │   │   └── _variables.scss
 │   ├── routes
+│   │   ├── crew.scss
 │   │   └── home.scss
 │   ├── globalStyle.scss
 │   └── reset.scss
